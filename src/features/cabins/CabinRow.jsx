@@ -6,6 +6,8 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import CreateCabinForm from "./CreateCabinForm";
 import useDeleteCabin from "./useDeleteCabin";
+import { HiPencil, HiSquare2Stack, HiTrash } from "react-icons/hi2";
+import useCreateCabin from "./useCreateCabin";
 
 const TableRow = styled.div`
   display: grid;
@@ -49,7 +51,17 @@ const Discount = styled.div`
 function CabinRow({ cabin }) {
   const [show, setShow] = useState();
   const { id, image, name, maxCapacity, regularPrice, discount } = cabin;
+  const { isCreating, createCabin } = useCreateCabin();
 
+  function hanbleDuplicate() {
+    createCabin({
+      name: `Copy of ${name}`,
+      image,
+      maxCapacity,
+      regularPrice,
+      discount,
+    });
+  }
   // Get queryClient from App.jsx
   const { isDeleting, deleteCabin } = useDeleteCabin();
   return (
@@ -65,9 +77,14 @@ function CabinRow({ cabin }) {
           <span>&mdash;</span>
         )}
         <div>
-          <button onClick={() => setShow(!show)}>Edit</button>
+          <button onClick={hanbleDuplicate} disabled={isCreating}>
+            <HiSquare2Stack />
+          </button>
+          <button onClick={() => setShow(!show)}>
+            <HiPencil />
+          </button>
           <button onClick={() => deleteCabin(id)} disabled={isDeleting}>
-            Delete
+            <HiTrash />
           </button>
         </div>
       </TableRow>
