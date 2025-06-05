@@ -1,3 +1,4 @@
+<div align="center">
 THE-WILD-OASIS
 ==============
 
@@ -93,3 +94,4 @@ The-wild-oasis uses the {**test\_framework**} test framework. Run the test suite
 
     npm test
     
+</div>
