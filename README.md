@@ -1,5 +1,6 @@
 <div align="center">
-THE-WILD-OASIS
+<h1 align="center">THE-WILD-OASIS</h1>
+
 
 _Transforming stays into unforgettable experiences, effortlessly._
 
