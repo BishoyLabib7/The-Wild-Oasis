@@ -1,6 +1,5 @@
 <div align="center">
 THE-WILD-OASIS
-==============
 
 _Transforming stays into unforgettable experiences, effortlessly._
 
@@ -11,7 +10,7 @@ _Built with the tools and technologies:_
 ![JSON](https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white) ![Markdown](https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white) ![npm](https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black) ![React](https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black)  
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=flat&logo=Vite&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B32C3.svg?style=flat&logo=ESLint&logoColor=white) ![datefns](https://img.shields.io/badge/datefns-770C56.svg?style=flat&logo=date-fns&logoColor=white) ![React%20Hook%20Form](https://img.shields.io/badge/React%20Hook%20Form-EC5990.svg?style=flat&logo=React-Hook-Form&logoColor=white) ![styledcomponents](https://img.shields.io/badge/styledcomponents-DB7093.svg?style=flat&logo=styled-components&logoColor=white)
 
-  
+  </div>
 
 * * *
 
@@ -94,4 +93,4 @@ The-wild-oasis uses the {**test\_framework**} test framework. Run the test suite
 
     npm test
     
-</div>
+
