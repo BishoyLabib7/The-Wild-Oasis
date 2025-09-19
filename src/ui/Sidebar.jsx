@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
+import { useMobileSidebar } from "../context/MobileSidebarContext";
+import { HiXMark } from "react-icons/hi2";
 
 const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);

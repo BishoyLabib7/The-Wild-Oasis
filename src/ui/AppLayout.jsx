@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
+import MobileSidebar from "./MobileSidebar";
 import Header from "./Header";
 import styled from "styled-components";
 import useResponsiveSidebar from "../hooks/useResponsiveSidebar";
@@ -54,6 +55,7 @@ function AppLayout() {
     <StyledAppLayout>
       <Header />
       <Sidebar />
+      <MobileSidebar />
       <Main>
         <Container>
           <Outlet />
