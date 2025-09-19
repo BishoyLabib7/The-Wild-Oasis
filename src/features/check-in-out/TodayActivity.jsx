@@ -19,6 +19,22 @@ const StyledToday = styled.div`
   gap: 2.4rem;
   grid-column: 1 / span 2;
   padding-top: 2.4rem;
+
+  @media (max-width: 1200px) {
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2.4rem;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem;
+    gap: 1.6rem;
+    padding-top: 1.6rem;
+  }
 `;
 
 const TodayList = styled.ul`
@@ -38,6 +54,14 @@ const NoActivity = styled.p`
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 0.8rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.4rem;
+  }
 `;
 
 function TodayActivity() {

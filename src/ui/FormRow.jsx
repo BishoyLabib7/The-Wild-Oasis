@@ -25,6 +25,23 @@ const StyledFormRow = styled.div`
     justify-content: flex-end;
     gap: 1.2rem;
   }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    padding: 1.6rem 0;
+
+    &:has(button) {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+  }
 `;
 
 const Label = styled.label`

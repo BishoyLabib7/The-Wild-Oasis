@@ -17,6 +17,16 @@ const Spinner = styled.div`
     conic-gradient(#0000 30%, var(--color-brand-600));
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
   animation: ${rotate} 1.5s infinite linear;
+
+  @media (max-width: 768px) {
+    margin: 3.2rem auto;
+    width: 5.6rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 2.4rem auto;
+    width: 4.8rem;
+  }
 `;
 
 export default Spinner;

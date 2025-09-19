@@ -10,6 +10,11 @@ const StyledCheckbox = styled.div`
     outline-offset: 2px;
     transform-origin: 0;
     accent-color: var(--color-brand-600);
+
+    @media (max-width: 480px) {
+      height: 2rem;
+      width: 2rem;
+    }
   }
 
   & input[type="checkbox"]:disabled {
@@ -22,6 +27,15 @@ const StyledCheckbox = styled.div`
     display: flex;
     align-items: center;
     gap: 0.8rem;
+
+    @media (max-width: 480px) {
+      gap: 0.6rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    gap: 1.2rem;
   }
 `;
 

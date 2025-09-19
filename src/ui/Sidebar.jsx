@@ -11,6 +11,11 @@ const StyledSidebar = styled.aside`
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+
+  /* hide on mobile */
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 function Sidebar() {
