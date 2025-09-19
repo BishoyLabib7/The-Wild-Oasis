@@ -12,16 +12,18 @@ const StyledHeader = styled.header`
   display: flex;
   gap: 2.4rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 
   @media (max-width: 768px) {
     padding: 1.2rem 2.4rem;
     gap: 1.6rem;
+    justify-content: space-between;
   }
 
   @media (max-width: 480px) {
     padding: 1rem 1.2rem;
     gap: 1.2rem;
+    justify-content: space-between;
   }
 `;
 
